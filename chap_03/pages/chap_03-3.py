@@ -74,7 +74,7 @@ df = pd.DataFrame(np.random.rand(10,5), columns=["A", "B", "C", "D", "E"])
 st.dataframe(df.style.background_gradient())
 
 # Pandas styler 예시 3: 테이블 활용 
-st.markdown('#### *Pandas styler 예시 3: 테이블 활용 *')
+st.markdown('#### *Pandas styler 예시 3: 테이블 활용*')
 
 df = pd.DataFrame(np.random.randn(10,4), columns=["A","B","C","D"])
 
