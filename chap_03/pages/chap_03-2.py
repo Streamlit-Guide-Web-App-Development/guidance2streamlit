@@ -60,7 +60,7 @@ st.divider()
 st.markdown('#### *st.video 예시 1*')
 vid_path = os.path.join(current_dir, "data/example.mp4")
 # 동영상 파일을 로컬 경로에서 재생하는 예시
-video_file = open("./data/example.mp4", "rb")
+video_file = open(vid_path, "rb")
 video_bytes = video_file.read()
 
 st.video(video_bytes)
