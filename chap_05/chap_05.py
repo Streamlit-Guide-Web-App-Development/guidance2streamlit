@@ -97,19 +97,3 @@ st.time_input("알람 시간을 설정해주세요.", key="13", label_visibility
 st.time_input("알람 시간을 설정해주세요.", key="14", label_visibility="hidden")
 st.time_input("알람 시간을 설정해주세요.", key="15", label_visibility="collapsed")
 st.date_input("알람 시간을 설정해주세요.", key="16", disabled=True)
-
-from tqdm import tqdm
-from datetime import datetime
-import time
-import pandas as pd
-
-date = st.date_input("Choose a date", datetime.now().date())
-def get_data(date):
-    for i in tqdm(range(10)):
-        time.sleep(0.1)
-    return pd.DataFrame(
-        {"date": pd.date_range(date, periods=3), "c": [7, 8, 5], "d": [10, 11, 7]}
-    ).set_index("date")
-
-df = get_data(date)
-st.write(df)
