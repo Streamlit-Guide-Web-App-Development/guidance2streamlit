@@ -1,9 +1,10 @@
 
 from datetime import datetime
-
+from tqdm import tqdm
 import streamlit as st
+import time
+import pandas as pd
 
-from streamlit_jupyter import StreamlitPatcher, tqdm
 
 st.title("Streamlit Deploy Test")
 
@@ -21,10 +22,6 @@ date = st.date_input("Choose a date", datetime.now().date())
 
 
 st.markdown(f"## Hello {name}!\n## The date is {date.strftime('%Y-%m-%d')}")
-
-import time
-
-import pandas as pd
 
 st.subheader("A cached dataframe")
 
