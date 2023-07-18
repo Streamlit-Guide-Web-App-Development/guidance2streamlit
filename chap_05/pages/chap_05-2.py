@@ -114,7 +114,7 @@ st.write("binary mime : \'application/octet-stream\'")
 st.markdown("#### *st.download_button 예시 6*")
 # github에서 이미지를 불러올 수 있도록 경로 지정
 current_dir = os.path.dirname(os.path.abspath(__file__))
-img_path = os.path.join(current_dir, "ali.jpg")
+img_path = os.path.join(current_dir, "data/ali.jpg")
 with open(img_path, "rb") as file:
     btn = st.download_button(
             label="이미지 다운로드",
