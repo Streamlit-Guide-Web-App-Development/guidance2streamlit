@@ -13,23 +13,23 @@ st.title('3.2 이미지, 비디오, 오디오 출력')
 st.divider()
 # st.image 예시 1
 st.markdown('#### *st.image 예시 1*')
-image = Image.open("example.jpg")
+image = Image.open("./data/example.jpg")
 
 st.image(image, caption="image1")
 # st.image 예시 2
 st.markdown('#### *st.image 예시 2*')
-image = Image.open("example.jpg")
+image = Image.open("./data/example.jpg")
 
 st.image(image, caption="width=100", width=100)
 # st.image 예시 3
 st.markdown('#### *st.image 예시 3*')
-image = Image.open("example.jpg")
+image = Image.open("./data/example.jpg")
 
 st.image(image, caption="example", width=200, use_column_width="auto")
 st.divider()
 # st.audio 예시 1
 st.markdown('#### *st.audio 예시 1*')
-audio_file = open("example.mp3", "rb")
+audio_file = open("./data/example.mp3", "rb")
 
 audio_bytes = audio_file.read()
 
@@ -51,13 +51,13 @@ st.divider()
 # st.video 예시 1
 st.markdown('#### *st.video 예시 1*')
 # 동영상 파일을 로컬 경로에서 재생하는 예시
-video_file = open("example.mp4", "rb")
+video_file = open("./data/example.mp4", "rb")
 video_bytes = video_file.read()
 
 st.video(video_bytes)
 # st.video 예시 2
 st.markdown('#### *st.video 예시 2*')
-video_file = open("example1.mp4", "rb")
+video_file = open("./data/example1.mp4", "rb")
 video_bytes = video_file.read()
 
 st.video(video_bytes)
