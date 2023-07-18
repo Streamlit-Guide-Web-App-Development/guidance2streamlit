@@ -25,12 +25,12 @@ st.image(image, caption="image1")
 # st.image 예시 2
 st.markdown('#### *st.image 예시 2*')
 
-image = Image.open("./data/example.jpg")
+image = Image.open(img_path)
 
 st.image(image, caption="width=100", width=100)
 # st.image 예시 3
 st.markdown('#### *st.image 예시 3*')
-image = Image.open("./data/example.jpg")
+image = Image.open(img_path)
 
 st.image(image, caption="example", width=200, use_column_width="auto")
 st.divider()
