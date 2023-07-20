@@ -1,2 +1,1 @@
-책 머리말 추가
-"Streamlit을 활용한 대시보드 만들기: 데이터 시각화부터 웹 배포까지" 출판
+<img width="596" alt="guidance2streamlit_coverpage" src="https://github.com/Streamlit-Guide-Web-App-Development/.github/assets/54128055/a2425409-e09b-4133-9dd9-785e2d94fdf1">
