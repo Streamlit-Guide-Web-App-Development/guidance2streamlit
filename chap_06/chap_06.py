@@ -70,33 +70,34 @@ col2.table(df)
 # st.columns 예시 2
 st.markdown('#### *st.columns 예시 2*')
 
-# col1, col2 = st.columns(2, gap="large")
+col1, col2 = st.columns(2, gap="large")
 
-# # 컬럼 영역 구분을 위한 css 코드 추가 (파란 가로선)
-# st.markdown(
-#     """
-#     <style>
-#     .custom-column {
-#         background-color: lightblue;
-#         padding: 5px;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
+# 컬럼 영역 구분을 위한 css 코드 추가 (파란 가로선)
+st.markdown(
+    """
+    <style>
+    .custom-column {
+        background-color: lightblue;
+        padding: 5px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-# with col1:
-#     st.subheader("column 1")
-#     image = Image.open("profile.png")
-#     st.markdown('<div class="custom-column">', unsafe_allow_html=True)
-#     st.image(image, caption="profile", width=200)
-
-# with col2:
-#     st.subheader("column 2")
-#     st.markdown('<div class="custom-column">', unsafe_allow_html=True)
-#     st.header("Jane")
-#     st.write("Hobby : Soccer")
-#     st.write("Nice to meet you.")
+with col1:
+    st.subheader("column 1")
+    img_path = os.path.join(current_dir, "data/image.png")
+    image = Image.open("img_path")
+    st.markdown('<div class="custom-column">', unsafe_allow_html=True)
+    st.image(image, caption="profile", width=200)
+  
+with col2:
+    st.subheader("column 2")
+    st.markdown('<div class="custom-column">', unsafe_allow_html=True)
+    st.header("Jane")
+    st.write("Hobby : Soccer")
+    st.write("Nice to meet you.")
 
 st.divider()
 
