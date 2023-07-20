@@ -9,6 +9,8 @@ import numpy as np
 from PIL import Image
 import time 
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
 st.title('6. 레이아웃')
 
 st.divider()
