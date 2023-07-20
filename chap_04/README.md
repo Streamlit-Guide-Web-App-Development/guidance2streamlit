@@ -1,1 +1,2 @@
-chapter 4 description
+# chapter 4 데이터 시각화
+Python의 다양한 라이브러리를 통해 데이터를 시각화하는 방법부터 Streamlit의 차트함수와 시각화 라이브러리의 차트 함수를 Streamlit 애플리케이션에 표시하는 방법을 소개합니다. 
