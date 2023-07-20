@@ -10,8 +10,6 @@ from PIL import Image
 import time 
 import os
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-
 st.title('6. 레이아웃')
 
 st.divider()
@@ -88,10 +86,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+current_dir = os.path.dirname(os.path.abspath(__file__))
 with col1:
     st.subheader("column 1")
     img_path = os.path.join(current_dir, "data/image.png")
-    image = Image.open("img_path")
+    image = Image.open(img_path)
     st.markdown('<div class="custom-column">', unsafe_allow_html=True)
     st.image(image, caption="profile", width=200)
   
