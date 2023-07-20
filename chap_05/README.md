@@ -1,1 +1,2 @@
-chapter 5 description
+# chapter 5 Streamlit의 인터렉티브 위젯
+Streamlit 애플리케이션에 다양한 위젯들을 통해 동적인 애플리케이션을 구현할 있는 방법을 다룹니다. Streamlit은 다양한 입력 위젯을 제공하여 사용자의 선택 또는 조작에 따라 애플리케이션의 동작을 변경할 수 있습니다.
