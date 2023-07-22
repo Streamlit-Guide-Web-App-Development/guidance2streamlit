@@ -27,7 +27,7 @@ df_menu = pd.DataFrame({
     "가격": [4500, 8000, 9000, 7500]
 }) # 데이터 프레임 생성 
 
-st.dataframe(df_menu, width=10, height=150, use_container_width=True) # 데이터프레임 출력
+st.dataframe(df_menu, width=10, height=200, use_container_width=True) # 데이터프레임 출력
 
 
 st.divider()
