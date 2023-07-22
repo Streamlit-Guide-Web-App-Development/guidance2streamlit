@@ -27,14 +27,13 @@ df_menu = pd.DataFrame({
     "가격": [4500, 8000, 9000, 7500]
 }) # 데이터 프레임 생성 
 
-st.dataframe(df, width=10, height=50, use_container_width=True) # 데이터프레임 출력
+st.dataframe(df_menu, width=10, height=50, use_container_width=True) # 데이터프레임 출력
 
 
 st.divider()
 # st.table 예시 1
 st.markdown('#### *st.table 예시 1*')
 
-st.markdown('#### *st.dataframe 예시 1*')
 list_menu = ["Smoothie", "Coke", "Latte", "Americano", "Cake"] # 리스트 생성
 
 st.table(list_menu) # 테이블 생성
